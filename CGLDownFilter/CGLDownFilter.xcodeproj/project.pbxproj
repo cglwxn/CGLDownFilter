@@ -30,6 +30,8 @@
 		2125DF2A22A4FE480084FF30 /* CGLFilterSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2125DF2422A4FE480084FF30 /* CGLFilterSelectModel.m */; };
 		2125DF2B22A4FE480084FF30 /* CGLTopFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2125DF2522A4FE480084FF30 /* CGLTopFilter.m */; };
 		2125DF2C22A4FE480084FF30 /* CGLFilterSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2125DF2622A4FE480084FF30 /* CGLFilterSelectView.m */; };
+		2125DF2F22A505E40084FF30 /* im_search_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF2D22A505E40084FF30 /* im_search_down@2x.png */; };
+		2125DF3022A505E40084FF30 /* im_search_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF2E22A505E40084FF30 /* im_search_down@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		2125DF2622A4FE480084FF30 /* CGLFilterSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLFilterSelectView.m; sourceTree = "<group>"; };
 		2125DF2722A4FE480084FF30 /* CGLFilterSelectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLFilterSelectViewCell.h; sourceTree = "<group>"; };
 		2125DF2822A4FE480084FF30 /* CGLFilterSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLFilterSelectModel.h; sourceTree = "<group>"; };
+		2125DF2D22A505E40084FF30 /* im_search_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_down@2x.png"; sourceTree = "<group>"; };
+		2125DF2E22A505E40084FF30 /* im_search_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_down@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,8 @@
 				2125DEC922A4FE340084FF30 /* AppDelegate.m */,
 				2125DECB22A4FE340084FF30 /* ViewController.h */,
 				2125DECC22A4FE340084FF30 /* ViewController.m */,
+				2125DF2D22A505E40084FF30 /* im_search_down@2x.png */,
+				2125DF2E22A505E40084FF30 /* im_search_down@3x.png */,
 				2125DECE22A4FE340084FF30 /* Main.storyboard */,
 				2125DED122A4FE360084FF30 /* Assets.xcassets */,
 				2125DED322A4FE360084FF30 /* LaunchScreen.storyboard */,
@@ -336,8 +342,10 @@
 			files = (
 				2125DF1F22A4FE420084FF30 /* Info.plist in Resources */,
 				2125DED522A4FE360084FF30 /* LaunchScreen.storyboard in Resources */,
+				2125DF2F22A505E40084FF30 /* im_search_down@2x.png in Resources */,
 				2125DED222A4FE360084FF30 /* Assets.xcassets in Resources */,
 				2125DED022A4FE340084FF30 /* Main.storyboard in Resources */,
+				2125DF3022A505E40084FF30 /* im_search_down@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
