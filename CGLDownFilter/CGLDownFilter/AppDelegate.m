@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  CGLDownFilter
 //
-//  Created by Guanglei Cheng on 2019/6/3.
-//  Copyright © 2019 Guanglei Cheng. All rights reserved.
+//  Created by cgl on 2019/6/3.
+//  Copyright © 2019 cgl. All rights reserved.
 //
 
 #import "AppDelegate.h"

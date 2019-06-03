@@ -2,15 +2,14 @@
 //  CGLTopFilter.m
 //  SouFun
 //
-//  Created by Guanglei Cheng on 2019/5/26.
-//  Copyright © 2019 房天下 CGL.com. All rights reserved.
+//  Created by cgl on 2019/5/26.
+//  Copyright © 2019  CGL.com. All rights reserved.
 //
 
 #import "CGLTopFilter.h"
 #import "CGLFilterSelectView.h"
 #import "Masonry.h"
-
-
+#import "UIButton+Helper.h"
 
 CGLButtonParamaterKey const CGLButtonAttributeFont = @"CGLButtonAttributeFont";
 CGLButtonParamaterKey const CGLButtonAttributeTitle = @"CGLButtonAttributeTitle";
@@ -21,7 +20,7 @@ CGLButtonParamaterKey const CGLButtonAttributeEdgeInset = @"CGLButtonAttributeEd
 CGLButtonParamaterKey const CGLButtonAttributeCornerRadius = @"CGLButtonAttributeCornerRadius";
 CGLButtonParamaterKey const CGLButtonAttributeSelectImageName = @"CGLButtonAttributeSelectImageName";
 CGLButtonParamaterKey const CGLButtonAttributeUnSelectImageName = @"CGLButtonAttributeUnSelectImageName";
-
+CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage = @"CGLButtonAttributeSpaceBetweenTitleAndImage";
 
 @interface CGLTopFilter ()
 
@@ -125,6 +124,8 @@ CGLButtonParamaterKey const CGLButtonAttributeUnSelectImageName = @"CGLButtonAtt
     [self layoutIfNeeded];
 }
 
+
+
 - (void)buttonAction:(UIButton *)sender {
     NSInteger index = sender.tag - 1000;
     NSDictionary *itemsDic = self.selectItems[index];
@@ -200,13 +201,17 @@ CGLButtonParamaterKey const CGLButtonAttributeUnSelectImageName = @"CGLButtonAtt
             [sender setTitle:selectedModel.title forState:(UIControlStateNormal)];
         }
         
+        if ([sender imageForState:UIControlStateNormal] && [sender titleForState:UIControlStateNormal] && ![[sender titleForState:UIControlStateNormal] isEqualToString:@""]) {
+            if (paraDic[CGLButtonAttributeSpaceBetweenTitleAndImage]) {
+                [sender judgeButtonTitleAndImage:UIControlStateNormal space:((NSNumber *)paraDic[CGLButtonAttributeSpaceBetweenTitleAndImage]).floatValue];
+            }else{
+                [sender judgeButtonTitleAndImage:UIControlStateNormal space:0];
+            }
+        }
+        
         if (strongSelf.topFilterCompletionHandler) {
             strongSelf.topFilterCompletionHandler(index,selectedModel);
         }
-        
-        
-        
-        
     };
 }
 
@@ -287,6 +292,10 @@ CGLButtonParamaterKey const CGLButtonAttributeUnSelectImageName = @"CGLButtonAtt
     if (buttonAttrDic[CGLButtonAttributeSelectImageName]) {
         [button setImage:[UIImage imageNamed:buttonAttrDic[CGLButtonAttributeSelectImageName]] forState:(UIControlStateNormal)];
     }
+    
+    if (buttonAttrDic[CGLButtonAttributeSpaceBetweenTitleAndImage] &&([button titleForState:UIControlStateNormal] && ![[button titleForState:UIControlStateNormal] isEqualToString:@""] && [button imageForState:UIControlStateNormal])) {
+        [button judgeButtonTitleAndImage:UIControlStateNormal space:((NSNumber *)buttonAttrDic[CGLButtonAttributeSpaceBetweenTitleAndImage]).floatValue];
+    }
 }
 
 #pragma mark - accessors
@@ -315,6 +324,14 @@ CGLButtonParamaterKey const CGLButtonAttributeUnSelectImageName = @"CGLButtonAtt
             button.tag = 1000 + i;
             [self addSubview:button];
             [button setTitle:originTitle forState:(UIControlStateNormal)];
+            
+            if ([button imageForState:UIControlStateNormal] && [button titleForState:UIControlStateNormal] && ![[button titleForState:UIControlStateNormal] isEqualToString:@""]) {
+                if (paraDic[CGLButtonAttributeSpaceBetweenTitleAndImage]) {
+                    [button judgeButtonTitleAndImage:UIControlStateNormal space:((NSNumber *)paraDic[CGLButtonAttributeSpaceBetweenTitleAndImage]).floatValue];
+                }else{
+                    [button judgeButtonTitleAndImage:UIControlStateNormal space:0];
+                }
+            }
             
             [button addTarget:self action:@selector(buttonAction:) forControlEvents:(UIControlEventTouchUpInside)];
             [_topTitleView addSubview:button];

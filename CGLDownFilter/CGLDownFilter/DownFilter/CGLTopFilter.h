@@ -2,8 +2,8 @@
 //  CGLTopFilter.h
 //  SouFun
 //
-//  Created by Guanglei Cheng on 2019/5/26.
-//  Copyright © 2019 房天下 CGL.com. All rights reserved.
+//  Created by cgl on 2019/5/26.
+//  Copyright © 2019  CGL.com. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -35,7 +35,7 @@ UIKIT_EXTERN CGLButtonParamaterKey const CGLButtonAttributeCornerRadius;
 UIKIT_EXTERN CGLButtonParamaterKey const CGLButtonAttributeSelectImageName;
 UIKIT_EXTERN CGLButtonParamaterKey const CGLButtonAttributeUnSelectImageName;
 UIKIT_EXTERN CGLButtonParamaterKey const CGLButtonAttributeButtonBackGroundColor;
-
+UIKIT_EXTERN CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage;
 
 typedef void (^CGLTopFilterCompletionHandler)(NSInteger index,CGLFilterSelectModel *selectedModel);
 

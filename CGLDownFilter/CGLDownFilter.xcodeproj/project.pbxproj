@@ -33,6 +33,8 @@
 		2125DF2F22A505E40084FF30 /* im_search_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF2D22A505E40084FF30 /* im_search_down@2x.png */; };
 		2125DF3022A505E40084FF30 /* im_search_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF2E22A505E40084FF30 /* im_search_down@3x.png */; };
 		2125DF3522A50ED20084FF30 /* downFilterGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF3422A50ED20084FF30 /* downFilterGif.gif */; };
+		2128B11522A52D5000DAABB6 /* UIButton+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2128B11422A52D5000DAABB6 /* UIButton+Helper.m */; };
+		2128B11722A52FF600DAABB6 /* downFilterGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2128B11622A52FF600DAABB6 /* downFilterGif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,9 @@
 		2125DF2D22A505E40084FF30 /* im_search_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_down@2x.png"; sourceTree = "<group>"; };
 		2125DF2E22A505E40084FF30 /* im_search_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_down@3x.png"; sourceTree = "<group>"; };
 		2125DF3422A50ED20084FF30 /* downFilterGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = downFilterGif.gif; sourceTree = "<group>"; };
+		2128B11322A52D5000DAABB6 /* UIButton+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Helper.h"; sourceTree = "<group>"; };
+		2128B11422A52D5000DAABB6 /* UIButton+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Helper.m"; sourceTree = "<group>"; };
+		2128B11622A52FF600DAABB6 /* downFilterGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = downFilterGif.gif; path = ../../../../../../Documents/downFilterGif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +168,6 @@
 				2125DEC922A4FE340084FF30 /* AppDelegate.m */,
 				2125DECB22A4FE340084FF30 /* ViewController.h */,
 				2125DECC22A4FE340084FF30 /* ViewController.m */,
-				2125DF2D22A505E40084FF30 /* im_search_down@2x.png */,
-				2125DF2E22A505E40084FF30 /* im_search_down@3x.png */,
 				2125DECE22A4FE340084FF30 /* Main.storyboard */,
 				2125DED122A4FE360084FF30 /* Assets.xcassets */,
 				2125DED322A4FE360084FF30 /* LaunchScreen.storyboard */,
@@ -228,14 +231,16 @@
 		2125DF2022A4FE480084FF30 /* DownFilter */ = {
 			isa = PBXGroup;
 			children = (
-				2125DF2122A4FE480084FF30 /* CGLFilterSelectViewCell.m */,
 				2125DF2222A4FE480084FF30 /* CGLTopFilter.h */,
-				2125DF2322A4FE480084FF30 /* CGLFilterSelectView.h */,
-				2125DF2422A4FE480084FF30 /* CGLFilterSelectModel.m */,
 				2125DF2522A4FE480084FF30 /* CGLTopFilter.m */,
+				2125DF2322A4FE480084FF30 /* CGLFilterSelectView.h */,
 				2125DF2622A4FE480084FF30 /* CGLFilterSelectView.m */,
 				2125DF2722A4FE480084FF30 /* CGLFilterSelectViewCell.h */,
+				2125DF2122A4FE480084FF30 /* CGLFilterSelectViewCell.m */,
 				2125DF2822A4FE480084FF30 /* CGLFilterSelectModel.h */,
+				2125DF2422A4FE480084FF30 /* CGLFilterSelectModel.m */,
+				2128B11322A52D5000DAABB6 /* UIButton+Helper.h */,
+				2128B11422A52D5000DAABB6 /* UIButton+Helper.m */,
 			);
 			path = DownFilter;
 			sourceTree = "<group>";
@@ -244,6 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				2125DF3422A50ED20084FF30 /* downFilterGif.gif */,
+				2128B11622A52FF600DAABB6 /* downFilterGif.gif */,
+				2125DF2D22A505E40084FF30 /* im_search_down@2x.png */,
+				2125DF2E22A505E40084FF30 /* im_search_down@3x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -352,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2125DF1F22A4FE420084FF30 /* Info.plist in Resources */,
+				2128B11722A52FF600DAABB6 /* downFilterGif.gif in Resources */,
 				2125DF3522A50ED20084FF30 /* downFilterGif.gif in Resources */,
 				2125DED522A4FE360084FF30 /* LaunchScreen.storyboard in Resources */,
 				2125DF2F22A505E40084FF30 /* im_search_down@2x.png in Resources */,
@@ -384,6 +393,7 @@
 			files = (
 				2125DF1822A4FE420084FF30 /* MASConstraintMaker.m in Sources */,
 				2125DF2922A4FE480084FF30 /* CGLFilterSelectViewCell.m in Sources */,
+				2128B11522A52D5000DAABB6 /* UIButton+Helper.m in Sources */,
 				2125DECD22A4FE340084FF30 /* ViewController.m in Sources */,
 				2125DF1622A4FE420084FF30 /* ViewController+MASAdditions.m in Sources */,
 				2125DF1D22A4FE420084FF30 /* MASViewConstraint.m in Sources */,
