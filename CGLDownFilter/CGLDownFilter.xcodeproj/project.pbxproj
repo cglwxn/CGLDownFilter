@@ -32,7 +32,7 @@
 		2125DF2C22A4FE480084FF30 /* CGLFilterSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2125DF2622A4FE480084FF30 /* CGLFilterSelectView.m */; };
 		2125DF2F22A505E40084FF30 /* im_search_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF2D22A505E40084FF30 /* im_search_down@2x.png */; };
 		2125DF3022A505E40084FF30 /* im_search_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF2E22A505E40084FF30 /* im_search_down@3x.png */; };
-		2125DF3322A50C180084FF30 /* CGLDownFilterGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF3222A50C180084FF30 /* CGLDownFilterGif.gif */; };
+		2125DF3522A50ED20084FF30 /* downFilterGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2125DF3422A50ED20084FF30 /* downFilterGif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,7 @@
 		2125DF2822A4FE480084FF30 /* CGLFilterSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLFilterSelectModel.h; sourceTree = "<group>"; };
 		2125DF2D22A505E40084FF30 /* im_search_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_down@2x.png"; sourceTree = "<group>"; };
 		2125DF2E22A505E40084FF30 /* im_search_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_down@3x.png"; sourceTree = "<group>"; };
-		2125DF3222A50C180084FF30 /* CGLDownFilterGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CGLDownFilterGif.gif; sourceTree = "<group>"; };
+		2125DF3422A50ED20084FF30 /* downFilterGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = downFilterGif.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +243,7 @@
 		2125DF3122A50C180084FF30 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				2125DF3222A50C180084FF30 /* CGLDownFilterGif.gif */,
+				2125DF3422A50ED20084FF30 /* downFilterGif.gif */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -352,11 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2125DF1F22A4FE420084FF30 /* Info.plist in Resources */,
+				2125DF3522A50ED20084FF30 /* downFilterGif.gif in Resources */,
 				2125DED522A4FE360084FF30 /* LaunchScreen.storyboard in Resources */,
 				2125DF2F22A505E40084FF30 /* im_search_down@2x.png in Resources */,
 				2125DED222A4FE360084FF30 /* Assets.xcassets in Resources */,
 				2125DED022A4FE340084FF30 /* Main.storyboard in Resources */,
-				2125DF3322A50C180084FF30 /* CGLDownFilterGif.gif in Resources */,
 				2125DF3022A505E40084FF30 /* im_search_down@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
