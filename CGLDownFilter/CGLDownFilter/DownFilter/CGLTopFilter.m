@@ -137,15 +137,6 @@ CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage = @"CGLB
     self.filterSelecteView.dataSource = dataSource;
     NSDictionary *paraDic = _paramaters[index];
     
-    
-//    for (UIButton *button in self.mansoryViewArr) {
-//        if (button != sender) {
-//            if (paraDic[CGLButtonAttributeTitleColor]) {
-//                [button setTitleColor:paraDic[CGLButtonAttributeTitleColor] forState:(UIControlStateNormal)];
-//            }
-//        }
-//    }
-    
     //更新约束,动画
     [self.filterSelecteView mas_updateConstraints:^(MASConstraintMaker *make) {
         if (dataSource.count * 50 < 360) {
@@ -221,7 +212,7 @@ CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage = @"CGLB
     WS(ws)
     [self.maskBlacKView mas_makeConstraints:^(MASConstraintMaker *make) {
         __strong typeof(ws) strongSelf = ws;
-        make.top.equalTo(strongSelf.mas_top).mas_offset(_height);
+        make.top.equalTo(strongSelf.mas_top).mas_offset(strongSelf.height);
         make.left.equalTo(strongSelf.mas_left).mas_offset(0);
         make.right.equalTo(strongSelf.mas_right).mas_offset(0);
         make.bottom.equalTo(strongSelf.mas_bottom).mas_offset(0);
@@ -232,12 +223,12 @@ CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage = @"CGLB
         make.top.equalTo(strongSelf.mas_top).mas_offset(0);
         make.left.equalTo(strongSelf.mas_left).mas_offset(0);
         make.right.equalTo(strongSelf.mas_right).mas_offset(0);
-        make.height.mas_equalTo(_height);
+        make.height.mas_equalTo(strongSelf.height);
     }];
     
     [self.filterSelecteView mas_makeConstraints:^(MASConstraintMaker *make) {
         __strong typeof(ws) strongSelf = ws;
-        make.top.equalTo(strongSelf.mas_top).mas_offset(_height);
+        make.top.equalTo(strongSelf.mas_top).mas_offset(strongSelf.height);
         make.left.equalTo(strongSelf.mas_left).mas_offset(0);
         make.right.equalTo(strongSelf.mas_right).mas_offset(0);
         make.height.mas_equalTo(0);
@@ -258,7 +249,7 @@ CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage = @"CGLB
         [self.mansoryViewArr mas_makeConstraints:^(MASConstraintMaker *make) {
             __strong typeof(ws) strongSelf = ws;
             make.top.equalTo(strongSelf.mas_top).mas_offset(0);
-            make.height.mas_equalTo(_height);
+            make.height.mas_equalTo(strongSelf.height);
         }];
     }
 }
