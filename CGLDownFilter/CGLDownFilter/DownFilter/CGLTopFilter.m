@@ -118,8 +118,10 @@ CGLButtonParamaterKey const CGLButtonAttributeSpaceBetweenTitleAndImage = @"CGLB
     }];
 #pragma mark - 注:此处必须先移除 bottomCon
     [self.bottomCon uninstall];
+    WS(ws)
     [self mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(_height);
+        __block CGLTopFilter *strongSelf = ws;
+        make.height.mas_equalTo(strongSelf.height);
     }];
     [self layoutIfNeeded];
 }

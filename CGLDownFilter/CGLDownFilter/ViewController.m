@@ -22,6 +22,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.topFilter];
     [self buildConstraints];
+    
 }
 
 - (void)buildConstraints {
